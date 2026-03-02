@@ -10,11 +10,10 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "D:/AAA_Software/mingw64/bin/g++.exe",
+            "compilerPath": "D:/AAA_Software/Code/mingw64/bin/g++.exe",
             "cStandard": "c17",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "windows-gcc-x64",
-            "mergeConfigurations": false
+            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4
