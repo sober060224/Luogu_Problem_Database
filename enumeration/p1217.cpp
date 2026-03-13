@@ -98,56 +98,47 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0), cout.tie(0);
-
+    
     // testip();
     tester();
-    // testvti();
-
-    // int a, b;
-    // cin >> a >> b;
-    // // 递归改变位数也变，一个循环结束就增加可改变位数
-    // // 能解决最大位数：
-    // // 从最大数得到位数，找到需要改变的一半的位数
-    // // a < b
-    // int length = 0, t = b;
-    // while (t)
-    // {
-    //     length++;
-    //     t /= 10;
-    // }
-    // // 用递归从最左边一直找到中间位置，要包含中间的数字
-    // // length = (length + 1) / 2;
-    // vector<int> nums(11);
-    
-    // for (int i = 1; i <= length; i++)
-    //     solve(nums, 1, i, a, b);
-    // return 0;
+    testvti();
+    int a, b;
+    cin >> a >> b;
+    // 递归改变位数也变，一个循环结束就增加可改变位数
+    // 能解决最大位数：
+    // 从最大数得到位数，找到需要改变的一半的位数
+    // a < b
+    int length = 0, t = b;
+    while (t)
+    {
+        length++;
+        t /= 10;
+    }
+    // 用递归从最左边一直找到中间位置，要包含中间的数字
+    // length = (length + 1) / 2;
+    vector<int> nums(11);
+    for (int i = 1; i <= length; i++)
+        solve(nums, 1, i, a, b);
+    return 0;
 }
 
 // #include <bits/stdc++.h>
 // using namespace std;
 // #define ll long long
-
 // void showve(vector<int> &a)
 // {
 //    for (int i = 1; i < a.size(); i++)
 //        cout << a[i] << ' ';
 //    cout << endl;
 // }
-
 // void solve()
 // {
-
 // }
-
 // int main()
 // {
 //     ios::sync_with_stdio(false);
 //     cin.tie(0), cout.tie(0);
-
 //     int a, b;
 //     cin >> a >> b;
-    
-
 //     return 0;
 // }

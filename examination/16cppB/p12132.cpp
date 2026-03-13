@@ -26,7 +26,7 @@ int main()
     for (int i = 1; i <= N; i++)
     {
         cin >> a[i];
-        if (a[i] % 3 == 0)
+        if (a[i] != 1)
             total++;
     }
 
