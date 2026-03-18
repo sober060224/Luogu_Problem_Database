@@ -38,9 +38,19 @@ int main()
 
     int n;
     cin >> n;
-    vector<bool> visited(n + 1, false);
-    vector<int> perm(n + 1);
-    solve(perm, 1, visited);
+    vector<int> a(n + 1);
+    for (int i = 1; i <= n; i++)
+        a[i] = i;
+
+    do
+    {
+        showve(a);
+    } while (next_permutation(++a.begin(), a.end()));
+    
+
+    // vector<bool> visited(n + 1, false);
+    // vector<int> perm(n + 1);
+    // solve(perm, 1, visited);
 
     return 0;
 }
